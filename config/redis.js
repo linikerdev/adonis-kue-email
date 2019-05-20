@@ -32,9 +32,9 @@ module.exports = {
   |
   */
   local: {
-    host: '127.0.0.1',
+    host: '10.1.0.2',
     port: 6379,
-    password: null,
+    password: 'maf#123456',
     db: 0,
     keyPrefix: ''
   },
@@ -49,15 +49,15 @@ module.exports = {
   */
   cluster: {
     clusters: [{
-      host: '127.0.0.1',
+      host: '10.1.0.2',
       port: 6379,
-      password: null,
+      password: 'maf#123456',
       db: 0
     },
     {
-      host: '127.0.0.1',
+      host: '10.1.0.2',
       port: 6380,
-      password: null,
+      password: 'maf#123456',
       db: 0
     }]
   }

@@ -1,0 +1,5 @@
+FROM stephenafamo/adonisjs
+WORKDIR /home/node/app
+COPY / /home/node/app
+CMD ["adonis","kue:listen"]
+

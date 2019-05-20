@@ -23,15 +23,13 @@ class KueController {
    */
   async index ({ request, response, view }) {
 
-    const data = { test: 'data' } // Data to be passed to job handle
-    const priority = 'normal' // Priority of job, can be low, normal, medium, high or critical
-    const attempts = 1 // Number of times to attempt job if it fails
-    const remove = true // Should jobs be automatically removed on completion
-    const jobFn = job => { // Function to be run on the job before it is saved
-      job.backoff()
-    }
-    const job = kue.dispatch(Job.key, data, { priority, attempts, remove, jobFn })
-    
+    const data = { test: 'data' } // Dados a serem passados ​​para o identificador de trabalho
+    const priority = 'normal' // Prioridade do trabalho, pode ser baixa, normal, média, alta ou crítica
+    const attempts = 1 // Número de vezes para tentar trabalho se falhar
+    const remove = true // Os trabalhos devem ser removidos automaticamente após a conclusão
+
+    const job = kue.dispatch(Job.key, data, { priority, attempts, remove })
+
     response.json({
       data: job
     })
