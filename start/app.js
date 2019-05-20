@@ -65,7 +65,7 @@ const aliases = {
 const commands = []
 
 const jobs = [
-  'App/Jobs/sendMain'
+  'App/Jobs/SendMain'
 ]
 
 module.exports = { providers, aceProviders, aliases, commands, jobs }

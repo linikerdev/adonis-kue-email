@@ -1,6 +1,6 @@
 'use strict'
 
-const Job = use('App/Jobs/sendMain')
+const Job = use('App/Jobs/SendMain')
 const Mail = use('Mail')
 
 class EmailController {

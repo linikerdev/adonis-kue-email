@@ -9,7 +9,7 @@
  */
 
 const kue = use('Kue')
-const Job = use('App/Jobs/sendMain')
+const Job = use('App/Jobs/SendMain')
 
 class KueController {
   /**
